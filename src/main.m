@@ -32,7 +32,7 @@ enum KeyUsage: UWord {
     R = 0x15,
 }
 
-let main(argc: UWord, argv: *UByte[]): Word {
+let main(): Word {
     installTrap()
     pic.enable = 0
     beeper.frequency = 1000
