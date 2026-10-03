@@ -150,9 +150,7 @@ let bootDisk(d: Disk, drive: *UByte): Void {
     info.devices = probeDevices(table, (BOOT_INFO_END - table) / sizeof(DeviceEntry))
     info.deviceTable = table
 
-    write("Booting from ")
-    write(drive)
-    write(".\n")
+    write("Booting...\n")
 
     // the state after reset, except for what the protocol passes on
     videoPalette()
